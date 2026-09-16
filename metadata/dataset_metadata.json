@@ -1,0 +1,45 @@
+{
+  "projeto": "Monitoramento de vegetação na SP-348",
+  "gerado_em_utc": "2026-09-16T22:51:49.925263+00:00",
+  "fonte": "OpenStreetMap via Overpass API",
+  "licenca": "ODbL 1.0",
+  "bbox_sul_oeste_norte_leste": [
+    -23.25,
+    -47.25,
+    -22.82,
+    -46.8
+  ],
+  "endpoints_nesta_execucao": {
+    "roads": "cache local",
+    "vegetation": "cache local"
+  },
+  "timestamp_osm_rodovias": "2026-05-31T22:37:44Z",
+  "timestamp_osm_vegetacao": "2026-07-28T02:16:18Z",
+  "quantidade_elementos_rodovias_brutos": 179,
+  "quantidade_elementos_vegetacao_brutos": 6820,
+  "quantidade_partes_vegetacao_processadas": 6094,
+  "quantidade_segmentos_dataset": 1225,
+  "distribuicao_prioridade": {
+    "alta": 838,
+    "media": 136,
+    "baixa": 251
+  },
+  "consultas_overpass": {
+    "rodovias": "[out:json][timeout:90];\nway[highway][ref~\"SP-348\"](-23.25,-47.25,-22.82,-46.8);\nout tags geom;",
+    "vegetacao": "[out:json][timeout:180][maxsize:268435456];\n(\n  way[natural~\"^(wood|scrub|grassland)$\"](-23.25,-47.25,-22.82,-46.8);\n  relation[natural~\"^(wood|scrub|grassland)$\"](-23.25,-47.25,-22.82,-46.8);\n  way[landuse~\"^(forest|grass|meadow)$\"](-23.25,-47.25,-22.82,-46.8);\n  relation[landuse~\"^(forest|grass|meadow)$\"](-23.25,-47.25,-22.82,-46.8);\n);\nout tags geom;"
+  },
+  "rotulagem": {
+    "proximidade": "80 * max(0, 1 - distancia_m / 300)",
+    "peso_tipo": {
+      "scrub": 20,
+      "wood/forest": 15,
+      "grassland/meadow": 10,
+      "grass": 5
+    },
+    "classes": {
+      "alta": ">= 70",
+      "media": ">= 40 e < 70",
+      "baixa": "< 40"
+    }
+  }
+}
