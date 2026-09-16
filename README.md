@@ -1,6 +1,15 @@
 # Monitoramento de vegetação na SP-348
 
+[![Acessar aplicação](https://img.shields.io/badge/Acessar%20aplicação-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://sprint3-dsa.streamlit.app/)
+
 Prova de conceito de Ciência de Dados para priorizar inspeções de vegetação no trecho Jundiaí–Campinas da Rodovia dos Bandeirantes (SP-348).
+
+## Demonstração online
+
+👉 **[Acessar o dashboard interativo](https://sprint3-dsa.streamlit.app/)**
+
+> O aplicativo está hospedado gratuitamente no Streamlit Community Cloud.
+> Caso esteja inativo, o primeiro carregamento pode levar alguns segundos.
 
 ## Pergunta de Ciência de Dados
 
