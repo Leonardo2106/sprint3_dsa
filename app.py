@@ -11,6 +11,7 @@ COLORS = {"alta": "#d73027", "media": "#fdae61", "baixa": "#1a9850"}
 st.set_page_config(page_title="Vegetação na SP-348", page_icon="🌳", layout="wide")
 st.title("Monitoramento de vegetação na SP-348")
 st.caption("Prova de conceito • trecho Jundiaí–Campinas • dados OpenStreetMap")
+st.caption("Dados © OpenStreetMap contributors — disponibilizados sob a ODbL 1.0.")
 
 if not DATA_PATH.exists():
     st.error("Dataset não encontrado. Execute `python3 src/pipeline.py` primeiro.")
