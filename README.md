@@ -95,3 +95,10 @@ O resultado serve para ordenar uma fila inicial de inspeção. Segmentos de prio
 4. Agendar coleta periódica, testes de qualidade e detecção de mudanças.
 5. Expandir o corredor por lotes para respeitar os limites das instâncias públicas da Overpass.
 
+## Licenças
+
+O código-fonte, o dashboard e o notebook são disponibilizados sob a [licença MIT](LICENSE).
+
+Os arquivos em `data/` contêm ou são derivados de dados do [OpenStreetMap](https://www.openstreetmap.org/) e são disponibilizados conforme a [Open Database License — ODbL 1.0](DATA_LICENSE.md).
+
+© OpenStreetMap contributors.
